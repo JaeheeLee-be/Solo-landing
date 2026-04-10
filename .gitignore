@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Django
+*.sqlite3
+media/
+
+# 환경변수
+.env
+
+# pyenv
+.python-version
+
+# IDE
+.idea/
+.vscode/
