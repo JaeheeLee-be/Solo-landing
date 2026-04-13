@@ -10,11 +10,13 @@ class Transaction(models.Model):
         WITHDRAWAL = 'withdrawal', '출금'
 
     class Category(models.TextChoices):
-        FOOD = 'food', '식비'
-        TRANSPORT = 'transport', '교통'
-        SHOPPING = 'shopping', '쇼핑'
-        CULTURE = 'culture', '문화'
-        ETC = 'etc', '기타'
+        FOOD = "food", "식비"
+        TRANSPORT = "transport", "교통비"
+        FIXED = "fixed", "고정비용"
+        SAVINGS = "savings", "저축"
+        LIVING = "living", "생활비"
+        CULTURE = "culture", "문화생활"
+        OTHER = "other", "기타"
 
     account = models.ForeignKey(
         Account,
